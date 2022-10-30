@@ -795,7 +795,7 @@ img {
 
 /* For large devices */
 
-/* HIDE SCROLL BAR (Best dumb idea)*/
+/* HIDE SCROLL BAR (Best dumb idea ever)*/
 body::-webkit-scrollbar {
   display: none;
 }
