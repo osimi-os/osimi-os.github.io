@@ -1129,3 +1129,7 @@ img {
     right: 3rem;
   }
 }
+/* HIDE SCROLL BAR (Best dumb idea ever)*/
+body::-webkit-scrollbar {
+  display: none;
+}
