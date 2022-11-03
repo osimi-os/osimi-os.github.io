@@ -205,7 +205,7 @@ img {
 @media screen and (max-width: 1023px){
   .nav__menu{
     position: fixed;
-    background-color: hsla(180, 12%, 8%, .8);
+    background-color: hsla(36, 4%, 12%, .4);
     backdrop-filter: blur(32px);
     -webkit-backdrop-filter: blur(32px);
     top: 0;
@@ -566,7 +566,7 @@ img {
 }
 .pricing__title{
   font-size: var(--h3-font-size);
-  color: var(--text-color);
+  color: var(--title-color-black);
   margin-bottom: 1rem;
 }
 .pricing__number{
@@ -659,13 +659,51 @@ img {
   border-radius: 0.5em;
 }
 
-.content:hover .content__overlay {
-  opacity: 100;
+.content__overlay__pre__1 {
+  background-color: var(--first-color-alt);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  border-radius: 0.5em;
 }
+
+.content__overlay__pre__2 {
+  background-color: var(--first-color-dark);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  border-radius: 0.5em;
+}
+
 
 .content:hover .content__overlay__pre {
   opacity: 100;
 }
+
+.content:hover .content__overlay__pre__1 {
+  opacity: 100;
+}
+
+.content:hover .content__overlay__pre__2 {
+  opacity: 100;
+}
+
 
 .content__image {
   object-fit: fill;
