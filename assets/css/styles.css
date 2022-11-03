@@ -931,10 +931,13 @@ img {
   bottom: -30%;
   background-color: var(--first-color);
   display: inline-flex;
-  padding: .35rem;
+  padding: 1rem;
   color: var(--title-color-black);
   font-size: var(--z-tooltip);
   transition: .3s;
+  box-shadow: 0px 0px 15px 1px rgb(161 133 81 / 47%);
+  border-radius: 50%;
+  font-size: 1.25rem;
 }
 
 .scrollup:hover{
