@@ -375,6 +375,18 @@ img {
   border-radius: .5rem;
 }
 
+.show__big{
+  object-fit: cover;
+  transition: 1s;
+}
+
+.show__big:hover{
+  transform: scale(1.7);
+  z-index: 1;
+  opacity: 1;
+  box-shadow: 1rem 1rem 1rem var(--body-color);
+}
+
 /*=============== PROGRAM ===============*/
 
 .program__container{
