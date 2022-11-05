@@ -384,7 +384,7 @@ img {
   transform: scale(1.7);
   z-index: 1;
   opacity: 1;
-  box-shadow: 1rem 1rem 1rem var(--body-color);
+  box-shadow: var(--body-color) 0px 1.25rem 1.25rem 1.25rem;
 }
 
 /*=============== PROGRAM ===============*/
