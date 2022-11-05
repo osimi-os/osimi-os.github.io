@@ -10,8 +10,8 @@
   /*Color mode HSL(hue, saturation, lightness)*/
   --first-color: hsl(42, 34%, 76%);
   --first-color-light: hsl(40, 36%, 85%);
-  --first-color-alt: hsl(36, 47%, 71%);
-  --first-color-dark: hsl(40, 51%, 64%);
+  --first-color-alt: hsl(36, 47%, 70%);
+  --first-color-dark: hsl(40, 55%, 62%);
   --first-color-gray: hsl(79, 6%, 64%);
   --title-color: hsl(180, 4%, 98%);
   --title-color-black: hsl(36, 4%, 12%);
