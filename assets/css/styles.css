@@ -579,7 +579,7 @@ img {
   margin-bottom: 1rem;
 }
 .pricing__title{
-  font-size: var(--h3-font-size);
+  font-size: var(--h4-font-size);
   color: var(--title-color-black);
   margin-bottom: 1rem;
 }
