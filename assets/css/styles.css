@@ -908,7 +908,7 @@ img {
   transition: background .4s;
 }
 
-.footer__social:hover{
+.footer__social-link:hover{
   background-color: var(--first-color-dark);
 }
 
