@@ -96,7 +96,7 @@ function calculateBmi() {
     calculateMessage.classList.add("color-red");
 
     //show message
-    calculateMessage.textContent = "Fill in the Height and Weight 👨‍💻";
+    calculateMessage.textContent = "Điền đầy đủ chiều cao và cân nặng 👨‍💻";
 
     //Timeout
     setTimeout(() => {
