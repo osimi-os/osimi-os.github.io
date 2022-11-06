@@ -109,13 +109,13 @@ function calculateBmi() {
 
     if (bmi < 18.5) {
       calculateMessage.classList.add("color-green");
-      calculateMessage.textContent = `Your BMI is ${bmi} and you are skinny`;
+      calculateMessage.textContent = `Chỉ số BMI của bạn là ${bmi} bạn đang thiếu cân`;
     } else if (bmi < 25) {
       calculateMessage.classList.add("color-green");
-      calculateMessage.textContent = `Your BMI is ${bmi} and you are healthy`;
+      calculateMessage.textContent = `Chỉ số BMI của bạn là ${bmi} bạn đang khỏe mạnh`;
     } else {
       calculateMessage.classList.add("color-green");
-      calculateMessage.textContent = `Your BMI is ${bmi} and you are overweight`;
+      calculateMessage.textContent = `Chỉ số BMI của bạn là ${bmi} bạn đang thừa cân`;
     }
 
     calculateCm.value = "";
