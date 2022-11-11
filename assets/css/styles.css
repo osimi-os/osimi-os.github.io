@@ -628,7 +628,8 @@ img {
 }
 .pricing__card-active .program__title,
 .pricing__card-active .pricing__number,
-.pricing__card-active .pricing__item{
+.pricing__card-active .pricing__item,
+.pricing__card-active .pricing__day{
   color: var(--title-color-black);
 }
 
