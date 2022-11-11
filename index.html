@@ -25,6 +25,14 @@
   <body>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
+      <div class="img-popup">
+        <!-- <span class="ri-close-line"></span> -->
+        <img class="image-content" src="" alt="popup-image" />
+        <div class="close-btn">
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
       <nav class="nav container">
         <a href="#" class="nav__logo">
           <img src="assets/img/logo-nav.png" alt="logo" />
@@ -70,7 +78,9 @@
             <h2 class="home__subtitle">MAKE YOUR</h2>
             <h1 class="home__title">BODY SHAPE</h1>
             <p class="home__description">
-              Chúng tôi mang đến cho mỗi người một cuộc sống hoàn hảo, nơi mà bạn được sống với “cái đẹp”, thể chất, tinh thần và mối quan hệ xã hội.
+              Chúng tôi mang đến cho mỗi người một cuộc sống hoàn hảo, nơi mà
+              bạn được sống với “cái đẹp”, thể chất, tinh thần và mối quan hệ xã
+              hội.
             </p>
             <a href="#program" class="button button__flex">
               Bắt đầu ngay <i class="ri-arrow-right-line"></i>
@@ -90,21 +100,38 @@
           </div>
         </div>
       </section>
+      <!--=============== IMG POP UP ===============-->
 
       <!--==================== LOGOS ====================-->
       <section class="logos section">
         <div class="logo__container container grid">
           <div class="show__big">
-            <img src="assets/img/phongkhach.jpg" alt="logo image" class="logos__img" />
+            <img
+              src="assets/img/phongkhach.jpg"
+              alt="logo image"
+              class="logos__img"
+            />
           </div>
           <div class="show__big">
-            <img src="assets/img/letan.jpg" alt="logo image" class="logos__img" />
+            <img
+              src="assets/img/letan.jpg"
+              alt="logo image"
+              class="logos__img"
+            />
           </div>
           <div class="show__big">
-            <img src="assets/img/tongquan.jpg" alt="logo image" class="logos__img" />
+            <img
+              src="assets/img/tongquan.jpg"
+              alt="logo image"
+              class="logos__img"
+            />
           </div>
           <div class="show__big">
-            <img src="assets/img/pilates.jpg" alt="logo image" class="logos__img" />
+            <img
+              src="assets/img/pilates.jpg"
+              alt="logo image"
+              class="logos__img"
+            />
           </div>
         </div>
       </section>
@@ -133,7 +160,8 @@
               <h3 class="program__title">Weight Lifting</h3>
 
               <p class="program__description">
-                Là một loại hình tập luyện sức mạnh phổ biến để phát triển sức mạnh, mật độ của cơ xương và duy trì sức mạnh.
+                Là một loại hình tập luyện sức mạnh phổ biến để phát triển sức
+                mạnh, mật độ của cơ xương và duy trì sức mạnh.
               </p>
               <a href="#" class="program__button">
                 <i class="ri-arrow-right-line"></i>
@@ -152,10 +180,11 @@
               <h3 class="program__title">Cardio Exercise</h3>
 
               <p class="program__description">
-                Là những bài tập giúp điều hòa nhịp tim. Khi tập cardio, hệ hô hấp của bạn sẽ hoạt động mạnh hơn khi bạn thở mạnh và sâu hơn.
+                Là những bài tập giúp điều hòa nhịp tim. Khi tập cardio, hệ hô
+                hấp của bạn sẽ hoạt động mạnh hơn khi bạn thở mạnh và sâu hơn.
               </p>
               <a href="#" class="program__button">
-                <i class="ri-arrow-right-line"></i>
+                <i class="ri-arrow-right-line program__arrow"></i>
               </a>
             </article>
 
@@ -171,9 +200,16 @@
               <h3 class="program__title">Basic Pilates</h3>
 
               <p class="program__description">
-                Pilates là bộ môn nhằm tăng cường cơ bắp, cải thiện tư thế và tính linh hoạt cho cơ thể.
+                Pilates là bộ môn nhằm tăng cường cơ bắp, cải thiện tư thế và
+                tính linh hoạt cho cơ thể.
               </p>
-              <a href="#" class="program__button">
+              <a class="program__button popup-image-container">
+                <img
+                  class="hidden"
+                  id="popup-img"
+                  alt="PILATE"
+                  src="assets\img\banggiapilate.jpg"
+                />
                 <i class="ri-arrow-right-line"></i>
               </a>
             </article>
@@ -190,9 +226,17 @@
               <h3 class="program__title">Stretching</h3>
 
               <p class="program__description">
-                một hình thức tập thể dục trong đó một nhóm cơ  được cố tình uốn cong hoặc kéo dài để cải thiện độ đàn hồi của cơ và để đạt được sự thoải mái của cơ bắp, giảm nguy cơ bị chấn thương.
+                Một hình thức tập thể dục trong đó một nhóm cơ được cố tình uốn
+                cong hoặc kéo dài để cải thiện độ đàn hồi của cơ và để đạt được
+                sự thoải mái của cơ bắp, giảm nguy cơ bị chấn thương.
               </p>
-              <a href="#" class="program__button">
+              <a class="program__button popup-image-container">
+                <img
+                  class="hidden"
+                  id="popup-img"
+                  src="assets\img\dichvugianco.jpg"
+                  alt="STRETCH"
+                />
                 <i class="ri-arrow-right-line"></i>
               </a>
             </article>
@@ -213,7 +257,8 @@
                 </div>
               </div>
               <p class="choose__description">
-                Chọn lớp học yêu thích của bạn và bắt đầu ngay bây giờ. Hãy nhớ rằng bài tập tồi tệ duy nhất là bạn không tập.
+                Chọn lớp học yêu thích của bạn và bắt đầu ngay bây giờ. Hãy nhớ
+                rằng bài tập tồi tệ duy nhất là bạn không tập.
               </p>
 
               <div class="choose__data">
@@ -271,29 +316,45 @@
                 alt="card-vip.png"
               />
               <div class="content__details fadeIn-bottom">
-                <article class="pricing__card pricing__card-active ">
+                <article class="pricing__card pricing__card-active">
                   <header class="pricing__header">
                     <h1 class="pricing__title">EQUINOX SILVER</h1>
-                    <h2 class="pricing__number">$600/năm</h2>
+                    <h2 class="pricing__number">$200</h2>
                   </header>
                   <ul class="pricing__list">
                     <li class="pricing__item">
-                      <i class="ri-checkbox-circle-line"></i>Sử dụng toàn bộ thiết bị
+                      <i class="ri-checkbox-circle-line"></i>Sử dụng toàn bộ
+                      thiết bị
                     </li>
                     <li class="pricing__item">
-                      <i class="ri-checkbox-circle-line"></i>sử dụng miễn phí khăn tập
+                      <i class="ri-checkbox-circle-line"></i>sử dụng miễn phí
+                      khăn tập
                     </li>
                     <li class="pricing__item">
                       <i class="ri-checkbox-circle-line"></i>Miễn phí tủ đồ
                     </li>
                     <li class="pricing__item">
-                      <i class="ri-checkbox-circle-line pricing__item-opacity"></i>gói tranform media
+                      <i
+                        class="ri-checkbox-circle-line pricing__item-opacity"
+                      ></i
+                      >gói tranform media
                     </li>
                     <li class="pricing__item">
-                      <i class="ri-checkbox-circle-line pricing__item-opacity"></i>Thảm yoga đính tên
+                      <i
+                        class="ri-checkbox-circle-line pricing__item-opacity"
+                      ></i
+                      >Thảm yoga đính tên
                     </li>
                   </ul>
-                  <a href="https://m.me/EquinoxPrivateGymPilates?fbclid=IwAR3Zzyk_t7HmXLC66l5d6i6GSrctL3yGE9nXuDt-1TDw4HuXVcl92fP426U" class="button button__flex pricing__button">
+                  <a
+                    class="button button__flex pricing__button popup-image-container"
+                  >
+                    <img
+                      class="hidden"
+                      id="popup-img"
+                      src="assets\img\0d0f4d2062c0a49efdd1.jpg"
+                      alt="SILVER"
+                    />
                     Tìm hiểu ngay<i class="ri-arrow-right-line"></i>
                   </a>
                 </article>
@@ -310,27 +371,40 @@
                 <article class="pricing__card pricing__card-active">
                   <header class="pricing__header">
                     <h1 class="pricing__title">EQUINOX GOLD</h1>
-                    <h2 class="pricing__number">$1300</h2>
-                    <h3 class="pricing__day">50 buổi</h3>
+                    <h2 class="pricing__number">$240</h2>
                   </header>
                   <ul class="pricing__list">
                     <li class="pricing__item">
-                      <i class="ri-checkbox-circle-line"></i>Sử dụng miễn phí khăn tập
+                      <i class="ri-checkbox-circle-line"></i>Sử dụng miễn phí
+                      khăn tập
                     </li>
                     <li class="pricing__item">
-                      <i class="ri-checkbox-circle-line"></i>Tặng gói transform media
+                      <i class="ri-checkbox-circle-line"></i>Tặng gói transform
+                      media
                     </li>
                     <li class="pricing__item">
-                      <i class="ri-checkbox-circle-line"></i>Tập luyện theo lộ trình với PT
+                      <i class="ri-checkbox-circle-line"></i>Tập luyện theo lộ
+                      trình với PT
                     </li>
                     <li class="pricing__item">
                       <i class="ri-checkbox-circle-line"></i>Miễn phí tủ đồ
                     </li>
                     <li class="pricing__item">
-                      <i class="ri-checkbox-circle-line pricing__item-opacity"></i>thảm yoga đính tên
+                      <i
+                        class="ri-checkbox-circle-line pricing__item-opacity"
+                      ></i
+                      >thảm yoga đính tên
                     </li>
                   </ul>
-                  <a href="https://m.me/EquinoxPrivateGymPilates?fbclid=IwAR3Zzyk_t7HmXLC66l5d6i6GSrctL3yGE9nXuDt-1TDw4HuXVcl92fP426U" class="button button__flex pricing__button">
+                  <a
+                    class="button button__flex pricing__button popup-image-container"
+                  >
+                    <img
+                      class="hidden"
+                      id="popup-img"
+                      src="assets\img\hangcaocap.jpg"
+                      alt="GOLD"
+                    />
                     Tìm hiểu ngay<i class="ri-arrow-right-line"></i>
                   </a>
                 </article>
@@ -347,27 +421,38 @@
                 <article class="pricing__card pricing__card-active">
                   <header class="pricing__header">
                     <h1 class="pricing__title">EQUINOX SIGNATURE</h1>
-                    <h2 class="pricing__number">$2600</h2>
-                    <h3 class="pricing__day">100 buổi</h3>
+                    <h2 class="pricing__number">$420</h2>
                   </header>
                   <ul class="pricing__list">
                     <li class="pricing__item">
-                      <i class="ri-checkbox-circle-line"></i>khăn tập in tên khách hàng
+                      <i class="ri-checkbox-circle-line"></i>khăn tập in tên
+                      khách hàng
                     </li>
                     <li class="pricing__item">
-                      <i class="ri-checkbox-circle-line"></i>gói tranform media VIP
+                      <i class="ri-checkbox-circle-line"></i>gói tranform media
+                      VIP
                     </li>
                     <li class="pricing__item">
-                      <i class="ri-checkbox-circle-line"></i>Tập luyện theo lộ trình với PT
+                      <i class="ri-checkbox-circle-line"></i>Tập luyện theo lộ
+                      trình với PT
                     </li>
                     <li class="pricing__item">
-                      <i class="ri-checkbox-circle-line"></i> Tủ đồ đính tên riêng
+                      <i class="ri-checkbox-circle-line"></i> Tủ đồ đính tên
+                      riêng
                     </li>
                     <li class="pricing__item">
                       <i class="ri-checkbox-circle-line"></i>Thảm yoga đính tên
                     </li>
                   </ul>
-                  <a href="https://m.me/EquinoxPrivateGymPilates?fbclid=IwAR3Zzyk_t7HmXLC66l5d6i6GSrctL3yGE9nXuDt-1TDw4HuXVcl92fP426U" class="button button__flex pricing__button">
+                  <a
+                    class="button button__flex pricing__button popup-image-container"
+                  >
+                    <img
+                      class="hidden"
+                      id="popup-img"
+                      src="assets\img\hangthuonggia.jpg"
+                      alt="SIGNATURE"
+                    />
                     Tìm hiểu ngay<i class="ri-arrow-right-line"></i>
                   </a>
                 </article>
@@ -387,7 +472,8 @@
             </div>
 
             <p class="calculate__description">
-              Máy tính chỉ số khối cơ thể (BMI) tính toán chỉ số khối cơ thể từ cân nặng và chiều cao của bạn.
+              Máy tính chỉ số khối cơ thể (BMI) tính toán chỉ số khối cơ thể từ
+              cân nặng và chiều cao của bạn.
             </p>
             <form action="" class="calculate__form" id="calculate-form">
               <div class="calculate__box">
@@ -431,6 +517,7 @@
         </div>
       </section>
     </main>
+
     <!--=================== FOOTER =====================-->
     <footer class="footer section" id="footer">
       <div class="footer__container container grid">
@@ -559,6 +646,9 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
     ></script>
+
+    <!--=============== JQUERY ===============-->
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
