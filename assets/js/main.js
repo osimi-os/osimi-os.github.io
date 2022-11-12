@@ -164,3 +164,29 @@ function sendEmail(){
             })
     }
 }
+/*=============== IMG POPUP ===============*/
+$(function () {
+  // required elements
+  var imgPopup = $(".img-popup");
+
+  var imgCont = $(".popup-image-container");
+  var popupImage = $(".img-popup img");
+  var closeBtn = $(".close-btn");
+
+  imgCont.on("click", function () {
+    // ADD NEW IMG TO MODAL
+    var img_src = $(this).children("img").attr("src");
+    imgPopup.children("img").attr("src", img_src);
+    // imgPopup.css("display", "block");
+    imgPopup.addClass("opened");
+  });
+
+  $(imgPopup, closeBtn).on("click", function () {
+    imgPopup.removeClass("opened");
+    imgPopup.children("img").attr("src", "");
+  });
+
+  popupImage.on("click", function (e) {
+    e.stopPropagation();
+  });
+});

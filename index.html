@@ -25,6 +25,14 @@
   <body>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
+      <div class="img-popup">
+        <!-- <span class="ri-close-line"></span> -->
+        <img class="image-content" src="" alt="popup-image" />
+        <div class="close-btn">
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
       <nav class="nav container">
         <a href="#" class="nav__logo">
           <img src="assets/img/logo-nav.png" alt="logo" />
@@ -135,7 +143,7 @@
               <p class="program__description">
                 Là một loại hình tập luyện sức mạnh phổ biến để phát triển sức mạnh, mật độ của cơ xương và duy trì sức mạnh.
               </p>
-              <a href="#" class="program__button">
+              <a href="https://m.me/EquinoxPrivateGymPilates?fbclid=IwAR3Zzyk_t7HmXLC66l5d6i6GSrctL3yGE9nXuDt-1TDw4HuXVcl92fP426U" class="program__button">
                 <i class="ri-arrow-right-line"></i>
               </a>
             </article>
@@ -154,7 +162,7 @@
               <p class="program__description">
                 Là những bài tập giúp điều hòa nhịp tim. Khi tập cardio, hệ hô hấp của bạn sẽ hoạt động mạnh hơn khi bạn thở mạnh và sâu hơn.
               </p>
-              <a href="#" class="program__button">
+              <a href="https://m.me/EquinoxPrivateGymPilates?fbclid=IwAR3Zzyk_t7HmXLC66l5d6i6GSrctL3yGE9nXuDt-1TDw4HuXVcl92fP426U" class="program__button">
                 <i class="ri-arrow-right-line"></i>
               </a>
             </article>
@@ -173,7 +181,13 @@
               <p class="program__description">
                 Pilates là bộ môn nhằm tăng cường cơ bắp, cải thiện tư thế và tính linh hoạt cho cơ thể.
               </p>
-              <a href="#" class="program__button">
+              <a class="program__button popup-image-container">
+                <img
+                  class="hidden"
+                  id="popup-img"
+                  alt="PILATE"
+                  src="assets/img/ban_gia_pilates.jpg"
+                />
                 <i class="ri-arrow-right-line"></i>
               </a>
             </article>
@@ -192,7 +206,13 @@
               <p class="program__description">
                 một hình thức tập thể dục trong đó một nhóm cơ  được cố tình uốn cong hoặc kéo dài để cải thiện độ đàn hồi của cơ và để đạt được sự thoải mái của cơ bắp, giảm nguy cơ bị chấn thương.
               </p>
-              <a href="#" class="program__button">
+              <a class="program__button popup-image-container">
+                <img
+                  class="hidden"
+                  id="popup-img"
+                  src="assets/img/dv_gian_co.jpg"
+                  alt="STRETCH"
+                />
                 <i class="ri-arrow-right-line"></i>
               </a>
             </article>
@@ -293,9 +313,17 @@
                       <i class="ri-checkbox-circle-line pricing__item-opacity"></i>Thảm yoga đính tên
                     </li>
                   </ul>
-                  <a href="https://m.me/EquinoxPrivateGymPilates?fbclid=IwAR3Zzyk_t7HmXLC66l5d6i6GSrctL3yGE9nXuDt-1TDw4HuXVcl92fP426U" class="button button__flex pricing__button">
-                    Tìm hiểu ngay<i class="ri-arrow-right-line"></i>
-                  </a>
+                  <a
+                  class="button button__flex pricing__button popup-image-container"
+                >
+                  <img
+                    class="hidden"
+                    id="popup-img"
+                    src="assets/img/silver_pricing.jpg"
+                    alt="SILVER"
+                  />
+                  Tìm hiểu ngay<i class="ri-arrow-right-line"></i>
+                </a>
                 </article>
               </div>
             </div>
@@ -330,9 +358,17 @@
                       <i class="ri-checkbox-circle-line pricing__item-opacity"></i>thảm yoga đính tên
                     </li>
                   </ul>
-                  <a href="https://m.me/EquinoxPrivateGymPilates?fbclid=IwAR3Zzyk_t7HmXLC66l5d6i6GSrctL3yGE9nXuDt-1TDw4HuXVcl92fP426U" class="button button__flex pricing__button">
-                    Tìm hiểu ngay<i class="ri-arrow-right-line"></i>
-                  </a>
+                  <a
+                  class="button button__flex pricing__button popup-image-container"
+                >
+                  <img
+                    class="hidden"
+                    id="popup-img"
+                    src="assets/img/gold_pricing.jpg"
+                    alt="GOLD"
+                  />
+                  Tìm hiểu ngay<i class="ri-arrow-right-line"></i>
+                </a>
                 </article>
               </div>
             </div>
@@ -367,9 +403,15 @@
                       <i class="ri-checkbox-circle-line"></i>Thảm yoga đính tên
                     </li>
                   </ul>
-                  <a href="https://m.me/EquinoxPrivateGymPilates?fbclid=IwAR3Zzyk_t7HmXLC66l5d6i6GSrctL3yGE9nXuDt-1TDw4HuXVcl92fP426U" class="button button__flex pricing__button">
-                    Tìm hiểu ngay<i class="ri-arrow-right-line"></i>
-                  </a>
+                  <a class="button button__flex pricing__button popup-image-container">
+                  <img
+                    class="hidden"
+                    id="popup-img"
+                    src="assets/img/signature_pricing.jpg"
+                    alt="SIGNATURE"
+                  />
+                  Tìm hiểu ngay<i class="ri-arrow-right-line"></i>
+                </a>
                 </article>
               </div>
             </div>
@@ -559,6 +601,8 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
     ></script>
+     <!--=============== JQUERY ===============-->
+     <script src="assets/js/jquery-3.6.1.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
