@@ -151,7 +151,7 @@ function sendEmail(){
             .then(() =>{
                 //show message and add color
                 contactMessage.classList.add('color-green')
-                contactMessage.textContent = 'you registered successfully ✅'
+                contactMessage.textContent = `you registered successfully ✅ as ${contactUser}`
 
                 //remove mesage after seven seconds
                 setTimeout(() =>{
