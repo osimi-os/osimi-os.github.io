@@ -132,8 +132,10 @@ function calculateBmi() {
 const contactFrom = document.getElementById('contact-form'),
       contactMessage = document.getElementById('contact-message'),
       contactUser = document.getElementById('contact-user')
-
 function sendEmail(){
+  var params = {
+    user_email : document.getElementById('contact-user').value
+  }
     if (contactUser.value === "" ) {
         //add and remove color
         contactMessage.classList.remove("color-green");
@@ -147,11 +149,11 @@ function sendEmail(){
         }, 3000)
     }else{
         // serviceID - templateID - #form - publickey
-        emailjs.sendForm('service_gdqzoxj','template_mwarzxl','#contact-form','9qyE6KNdWfdY29Iik')
-            .then(() =>{
+        emailjs.send("service_gdqzoxj","template_mwarzxl", params)
+            .then(() => {
                 //show message and add color
                 contactMessage.classList.add('color-green')
-                contactMessage.textContent = `you registered successfully ✅ as ${contactUser}`
+                contactMessage.textContent = `you registered successfully ✅`
 
                 //remove mesage after seven seconds
                 setTimeout(() =>{
@@ -190,3 +192,4 @@ $(function () {
     e.stopPropagation();
   });
 });
+
